@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('videoframe_6899.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  width: 100%;
+  height: 50px;
+
+  margin: 30px 0;
+  position: relative;
+
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+  color: #fff;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px.5px;
+  margin: -15px 0 15px;
+
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-left: 3px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+.splin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/spline.png") no-repeat;
+  background-size: cover;
+  z-index: -3333;
+}
+ .lcl {
+  box-shadow: inset 0 0 0 0 #ffffff;
+  color: #ffffff;
+  padding: 0 .25rem;
+  margin-left: 100px;
+  align-items: center;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.lcl:hover {
+  color: #00d9ff;
+  box-shadow: inset 200px 0 0 0 #9900ff;;
+}
+
+/* Presentational styles */
+.lcl {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.neon-text {
+    font-size: 1rem;
+    margin-top: 10px;
+
+
+
+    color: #fff;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
+
+
+
+
+.cursor{
+    position: relative;
+    width: 24em;
+    margin-top: 30px ;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 15px;
+    text-align: center;
+    white-space: wrap;
+    
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  --w:10ch;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 1.4em;
+  letter-spacing: var(--w);
+  width: var(--w);
+  overflow: hidden;
+  white-space: nowrap;
+  color: #ffffff;
+  text-shadow: 
+        calc( 0*var(--w)) 0 #ffffff,calc(-1*var(--w)) 0 #ffffff,calc(-2*var(--w)) 0 #ffffff,calc(-3*var(--w)) 0 #ffffff,calc(-4*var(--w)) 0 #ffffff, 
+        calc(-5*var(--w)) 0 #ffffff,calc(-6*var(--w)) 0 #ffffff,calc(-7*var(--w)) 0 #ffffff,calc(-8*var(--w)) 0 #ffffff,calc(-9*var(--w)) 0 #ffffff;
+  animation: l20 2s infinite linear;
+}
+.loader:before {
+  content:"Loading...";
+  color: #fff;
+}
+
+@keyframes l20 {
+  9.09% {text-shadow: 
+        calc( 0*var(--w)) -10px #ffffff,calc(-1*var(--w)) 0 #ffffff,calc(-2*var(--w)) 0 #ffffff,calc(-3*var(--w)) 0 #ffffff,calc(-4*var(--w)) 0 #ffffff, 
+        calc(-5*var(--w)) 0 #ffffff,calc(-6*var(--w)) 0 #ffffff,calc(-7*var(--w)) 0 #ffffff,calc(-8*var(--w)) 0 #ffffff,calc(-9*var(--w))rgb(255, 255, 255)000}
+  18.18% {text-shadow: 
+        calc( 0*var(--w)) 0 #ffffff,calc(-1*var(--w)) -10px #ffffff,calc(-2*var(--w))rgb(255, 255, 255)000,calc(-3*var(--w)) 0 #ffffff,calc(-4*var(--w)) 0 #ffffff, 
+        calc(-5*var(--w)) 0 #ffffff,calc(-6*var(--w)) 0 #f8f8f8,calc(-7*var(--w)) 0 #ffffff,calc(-8*var(--w)) 0 #ffffff,calc(-9*var(--w)) 0 #ffffff}
+  27.27% {text-shadow: 
+        calc( 0*var(--w)) 0 #ffffff,calc(-1*var(--w)) 0 #ffffff,calc(-2*var(--w)) -10px #ffffff,calc(-3*var(--w)) 0 #ffffff,calc(-4*var(--w)) 0 #ffffff, 
+        calc(-5*var(--w)) 0 #ffffff,calc(-6*var(--w)) 0 #ffffff,calc(-7*var(--w)) 0 #ffffff,calc(-8*var(--w)) 0 #ffffff,calc(-9*var(--w)) 0 #ffffff}
+  36.36% {text-shadow: 
+        calc( 0*var(--w)) 0 #ffffff,calc(-1*var(--w)) 0 #ffffff,calc(-2*var(--w)) 0 #ffffff,calc(-3*var(--w)) -10px #ffffff,calc(-4*var(--w)) 0 #ffffff, 
+        calc(-5*var(--w)) 0 #ffffff,calc(-6*var(--w)) 0 #ffffff,calc(-7*var(--w)) 0 #ffffff,calc(-8*var(--w)) 0 #ffffff,calc(-9*var(--w)) 0 #ffffff}
+  45.45% {text-shadow: 
+        calc( 0*var(--w)) 0 #ffffff,calc(-1*var(--w)) 0 #ffffff,calc(-2*var(--w)) 0 #ffffff,calc(-3*var(--w)) 0 #ffffff,calc(-4*var(--w)) -10px #ffffff, 
+        calc(-5*var(--w)) 0 #ffffff,calc(-6*var(--w)) 0 #ffffff,calc(-7*var(--w)) 0 #ffffff,calc(-8*var(--w)) 0 #ffffff,calc(-9*var(--w)) 0 #ffffff}
+  54.54% {text-shadow: 
+        calc( 0*var(--w)) 0 #ffffff,calc(-1*var(--w)) 0 #ffffff,calc(-2*var(--w)) 0 #ffffff,calc(-3*var(--w)) 0 #ffffff,calc(-4*var(--w)) 0 #ffffff, 
+        calc(-5*var(--w)) -10px #ffffff,calc(-6*var(--w)) 0 #ffffff,calc(-7*var(--w)) 0 #ffffff,calc(-8*var(--w)) 0 #ffffff,calc(-9*var(--w)) 0 #ffffff}
+  63.63% {text-shadow: 
+        calc( 0*var(--w)) 0 #ffffff,calc(-1*var(--w)) 0 #ffffff,calc(-2*var(--w)) 0 #ffffff,calc(-3*var(--w)) 0 #ffffff,calc(-4*var(--w)) 0 #ffffff, 
+        calc(-5*var(--w)) 0 #ffffff,calc(-6*var(--w)) -10px #ffffff,calc(-7*var(--w)) 0 #ffffff,calc(-8*var(--w)) 0 #ffffff,calc(-9*var(--w)) 0 #ffffff}
+  72.72% {text-shadow: 
+        calc( 0*var(--w)) 0 #ffffff,calc(-1*var(--w)) 0 #ffffff,calc(-2*var(--w)) 0 #ffffff,calc(-3*var(--w)) 0 #ffffff,calc(-4*var(--w)) 0 #ffffff, 
+        calc(-5*var(--w)) 0 #ffffff,calc(-6*var(--w)) 0 #ffffff,calc(-7*var(--w)) -10px #ffffff,calc(-8*var(--w)) 0 #ffffff,calc(-9*var(--w)) 0 #ffffff}
+  81.81% {text-shadow: 
+        calc( 0*var(--w)) 0 #ffffff,calc(-1*var(--w)) 0 #ffffff,calc(-2*var(--w)) 0 #ffffff,calc(-3*var(--w)) 0 #ffffff,calc(-4*var(--w)) 0 #ffffff, 
+        calc(-5*var(--w)) 0 #ffffff,calc(-6*var(--w)) 0 #ffffff,calc(-7*var(--w)) 0 #ffffff,calc(-8*var(--w)) -10px #ffffff,calc(-9*var(--w)) 0 #ffffff}
+  90.90% {text-shadow: 
+        calc( 0*var(--w)) 0 #ffffff,calc(-1*var(--w)) 0 #ffffff,calc(-2*var(--w)) 0 #ffffff,calc(-3*var(--w)) 0 #ffffff,calc(-4*var(--w)) 0 #ffffff, 
+        calc(-5*var(--w)) 0 #ffffff,calc(-6*var(--w)) 0 #ffffff,calc(-7*var(--w)) 0 #ffffff,calc(-8*var(--w)) 0 #ffffff,calc(-9*var(--w)) -10px #ffffff}
+}
